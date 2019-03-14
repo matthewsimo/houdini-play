@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<script>
+  CSS.paintWorklet.addModule('./js/checkers.js');
+</script>
+<style>
+  body {
+    margin: 0;
+  }
+  .checkers {
+    width: 100vw;
+    height: 100vw;
+    background-image: paint(checkers);
+    --c-spacing: 0;
+    --c-size: 80;
+  }
+</style>
+
+<div class="checkers"></div>
